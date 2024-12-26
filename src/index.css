@@ -8,3 +8,20 @@
     color: rgb(255, 27, 255);  /* Color on hover */
   }
   
+  .hero-heading {
+    font-size: 100px;
+    font-family:Roboto
+  }
+  .heropara{
+      font-size: 20px
+    }
+
+  /* Mobile screens */
+  @media (max-width: 767px) {
+    .hero-heading {
+      font-size: 30px; /* Smaller font size on mobile */
+    }
+    .heropara{
+      font-size: 10px
+    }
+  }

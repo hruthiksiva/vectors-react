@@ -43,7 +43,7 @@ const Navbar = () => {
         </nav>
       </div>
     </div>
-    <hr className='m-0 mb-5' style={{opacity:'10%'}}/>
+    <hr className='m-0 ' style={{opacity:'10%'}}/>
     </>
   );
 };
