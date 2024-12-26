@@ -1,0 +1,10 @@
+/* index.css or your CSS file */
+.footer-link {
+    text-decoration: none;
+    color: black;  /* Default color */
+  }
+  
+  .footer-link:hover {
+    color: rgb(255, 27, 255);  /* Color on hover */
+  }
+  
