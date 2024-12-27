@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
     <div className="container-fluid px-5 py-2 shadow-sm bg-light ">
       <div className="row px-5">
-        <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top ">
         <a className="navbar-brand" href="#">
           <img alt="" style={{ height: '40px' }} />Vectors
         </a>
@@ -24,19 +24,19 @@ const Navbar = () => {
           <div className="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item px-md-3">
-                <a className="nav-link" aria-current="page" href="#">Home</a>
+                <a className="nav-link" aria-current="page" href="/">Home</a>
               </li>
               <li className="nav-item px-md-3">
-                <a className="nav-link" aria-current="page" href="#">Services</a>
+                <a className="nav-link" aria-current="page" href="/services">Services</a>
               </li>
               <li className="nav-item px-md-3">
-                <a className="nav-link" aria-current="page" href="#">Portfolio</a>
+                <a className="nav-link" aria-current="page" href="portfolio">Portfolio</a>
               </li>
               <li className="nav-item px-md-3">
-                <a className="nav-link" aria-current="page" href="#">About</a>
+                <a className="nav-link" aria-current="page" href="about">About</a>
               </li>
               <li className="nav-item px-md-3">
-                <a className="nav-link" aria-current="page" href="#">Contact</a>
+                <a className="nav-link" aria-current="page" href="contact">Contact</a>
               </li>
             </ul>
           </div>

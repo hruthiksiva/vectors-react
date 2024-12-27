@@ -4,10 +4,16 @@
     color: black;  /* Default color */
   }
   
+  .grey{
+    color: rgb(134, 134, 134);
+  }
+  
   .purple{
     background-color: #e9e7f5
   }
-  
+  .purple-button{
+    background-color: #ecb5e7;
+  }
   .purple-font{
    color: #934e8d
   }
