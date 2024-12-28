@@ -6,6 +6,7 @@ import ServicePage from './Pages/ServicePage'
 import Portfolio from './Pages/Portfolio'
 import About from './Pages/About'
 import ContactUs from './Pages/ContactUs'
+import NotFound from './Pages/NotFound'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
       <Route path='/portfolio' element={<Portfolio/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<ContactUs/>}/>
+      <Route path='*' element={<NotFound/>}/>
     </Route>
   )
 )

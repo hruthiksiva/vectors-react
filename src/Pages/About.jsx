@@ -1,14 +1,16 @@
 import React from 'react'
 import Story from '../Components/Story'
 import Mission from '../Components/Mission'
-import Vision from '../Components/Vision'
+import Extrasss from '../Components/Vision'
+import Testimonials from '../Components/Testimonials'
 
 const About = () => {
   return (
     <>
       <Story/>
       <Mission/>
-      <Vision/>
+      <Extrasss/> 
+      <Testimonials/>
     </>
   )
 }
