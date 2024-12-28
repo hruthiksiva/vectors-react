@@ -5,11 +5,15 @@
   }
   
   .grey{
-    color: rgb(134, 134, 134);
+    color: rgb(86, 86, 86);
   }
   
   .purple{
     background-color: #e9e7f5
+  }
+
+  .purple-dark{
+    background-color: #934e8d
   }
   .purple-button{
     background-color: #ecb5e7;
@@ -18,7 +22,7 @@
    color: #934e8d
   }
 
-  .white{
+  .white-bg{
     background-color: rgb(255, 255, 255)
   }
   .footer-link:hover {
@@ -47,3 +51,5 @@
       font-size:xx-large;
     }
   }
+
+
