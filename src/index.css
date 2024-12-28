@@ -8,18 +8,22 @@
     color: rgb(86, 86, 86);
   }
   
+  .grey-bg{
+ background-color: #f4f4f4;
+  }
+
   .purple{
-    background-color: #e9e7f5
+    background-color: #fff3e5
   }
 
   .purple-dark{
-    background-color: #934e8d
+    background-color: #fb8701
   }
   .purple-button{
-    background-color: #ecb5e7;
+    background-color: #fdb96e;
   }
   .purple-font{
-   color: #934e8d
+   color: #fb8701
   }
 
   .white-bg{

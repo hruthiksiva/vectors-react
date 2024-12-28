@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <>
-    <div className='container-fluid' style={{backgroundColor:'#e9e7f5'}}>
+    <div className='container-fluid purple'>
         <div 
           className='col-md-10 mx-auto px-5 py-5 my-auto'
           style={{zIndex:'2px'}}
