@@ -1,97 +1,74 @@
-import React from 'react'
-import caseimg from '../assets/img/case.jpg'
-import CaseStudy from '../Components/CaseStudy'
+import React from 'react';
+import caseimg from '../assets/img/case.jpg';
+import CaseStudy from '../Components/CaseStudy';
 
 const Portfolio = () => {
+  const caseStudies = [
+    { img: caseimg, title: "Case Study 1", link: "#" },
+    { img: caseimg, title: "Case Study 2", link: "#" },
+    { img: caseimg, title: "Case Study 3", link: "#" }
+  ];
+
+  const renderCards = (category) => {
+    return caseStudies.map((caseStudy, index) => (
+      <div className="col-md-3 col-12 mb-4" key={index}>
+        <div className="card border-0 shadow-sm" style={{  }}>
+          <img className="card-img-top" src={caseStudy.img} alt="Card image cap" />
+          <div className="card-body">
+            <h5 className="card-title">{caseStudy.title}</h5>
+            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+          </div>
+        </div>
+      </div>
+    ));
+  };
+
   return (
     <div>
-      {/* <Design/>
-      <WebDevelopment/>
-      <Marketing/> */}
-      
-      <div className='container-fluid'>
-        <div className='row px-3 py-5 my-5 d-flex justify-content-center'>
-          <div className='text-center col-12 mb-4'>
+      {/* Design Section */}
+      <div className="container-fluid">
+        <div className="row px-3 py-5 my-5 d-flex justify-content-center">
+          <div className="text-center col-12 mb-4">
             <h2>Design</h2>
           </div>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-md-5 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 1</strong>
-          </a>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 2</strong>
-          </a>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 3</strong>
-          </a>
+          {renderCards('Design')}
         </div>
       </div>
 
-      <div className='container-fluid'>
-        <div className='row px-3 py-5 my-5 d-flex justify-content-center'>
-          <div className='text-center col-12 mb-4'>
+      {/* Web Development Section */}
+      <div className="container-fluid">
+        <div className="row px-3 py-5 my-5 d-flex justify-content-center">
+          <div className="text-center col-12 mb-4">
             <h2>Web Development</h2>
           </div>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-md-5 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 1</strong>
-          </a>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 2</strong>
-          </a>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 3</strong>
-          </a>
+          {renderCards('Web Development')}
         </div>
       </div>
 
-      <div className='container-fluid'>
-        <div className='row px-3 py-5 my-5 d-flex justify-content-center'>
-          <div className='text-center col-12 mb-4'>
+      {/* Marketing Section */}
+      <div className="container-fluid">
+        <div className="row px-3 py-5 my-5 d-flex justify-content-center">
+          <div className="text-center col-12 mb-4">
             <h2>Marketing</h2>
           </div>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-md-5 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 1</strong>
-          </a>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 2</strong>
-          </a>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 3</strong>
-          </a>
+          {renderCards('Marketing')}
         </div>
       </div>
 
-      <div className='container-fluid'>
-        <div className='row px-3 py-5 my-5 d-flex justify-content-center'>
-          <div className='text-center col-12 mb-4'>
-            <h2>Artificial intelligence</h2>
+      {/* Artificial Intelligence Section */}
+      <div className="container-fluid">
+        <div className="row px-3 py-5 my-5 d-flex justify-content-center">
+          <div className="text-center col-12 mb-4">
+            <h2>Artificial Intelligence</h2>
           </div>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-md-5 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 1</strong>
-          </a>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 2</strong>
-          </a>
-          <a href='*' className='col-md-3 rounded-3 shadow col-12 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-            <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-            <strong className=''>Case Study 3</strong>
-          </a>
+          {renderCards('Artificial Intelligence')}
         </div>
       </div>
 
-      <CaseStudy/>
+      <CaseStudy />
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;
