@@ -4,7 +4,7 @@ import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 
 const Testimonials = () => {
   return (
-    <div className='container-fluid pt-5 mt-5 purple'>
+    <div className='container-fluid pt-5 purple'>
       <div className='row py-md-5 my-dm-5'>
       <div className='row text-center'>
       <h1>See What Our <span className='purple-font'>Client Says About Us</span></h1> 
