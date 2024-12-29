@@ -18,7 +18,7 @@ const CoreStrength = () => {
         {/* Cards for Core Strengths */}
         <div className="row d-flex pb-5 justify-content-center">
           {/* Card 1: Innovation and R&D */}
-          <div className="card border-0 col-md-3 col-10 m-2 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
+          <div className="card border-0 col-md-3 shadow-sm col-10 m-3 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
             <div className="card-body d-flex flex-column align-items-start" style={{ display: 'flex', flexDirection: 'column' }}>
               <FontAwesomeIcon icon={faFlask} size="2x" className="mb-3" style={{ color: 'orange' }} /> {/* Font Awesome Icon */}
               <h5 className="card-title">Innovation and R&D</h5>
@@ -32,7 +32,7 @@ const CoreStrength = () => {
           </div>
 
           {/* Card 2: Scalability */}
-          <div className="card border-0 col-md-3 col-10 m-2 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
+          <div className="card border-0 col-md-3 shadow-sm col-10 m-3 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
             <div className="card-body d-flex flex-column align-items-start" style={{ display: 'flex', flexDirection: 'column' }}>
               <FontAwesomeIcon icon={faChartLine} size="2x" className="mb-3" style={{ color: 'orange' }} /> {/* Font Awesome Icon */}
               <h5 className="card-title">Scalability</h5>
@@ -46,7 +46,7 @@ const CoreStrength = () => {
           </div>
 
           {/* Card 3: Customer Support */}
-          <div className="card border-0 col-md-3 col-10 m-2 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
+          <div className="card border-0 col-md-3 shadow-sm col-10 m-3 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
             <div className="card-body d-flex flex-column align-items-start" style={{ display: 'flex', flexDirection: 'column' }}>
               <FontAwesomeIcon icon={faHeadset} size="2x" className="mb-3" style={{ color: 'orange' }} /> {/* Font Awesome Icon */}
               <h5 className="card-title">Customer Support</h5>
@@ -60,7 +60,7 @@ const CoreStrength = () => {
           </div>
 
           {/* Card 4: Security and Compliance */}
-          <div className="card border-0 col-md-3 col-10 m-2 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
+          <div className="card border-0 col-md-3 shadow-sm col-10 m-3 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
             <div className="card-body d-flex flex-column align-items-start" style={{ display: 'flex', flexDirection: 'column' }}>
               <FontAwesomeIcon icon={faShieldAlt} size="2x" className="mb-3" style={{ color: 'orange' }} /> {/* Font Awesome Icon */}
               <h5 className="card-title">Security and Compliance</h5>
@@ -74,7 +74,7 @@ const CoreStrength = () => {
           </div>
 
           {/* Card 5: Proactive Problem Solving */}
-          <div className="card border-0 col-md-3 col-10 m-2 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
+          <div className="card border-0 col-md-3 shadow-sm col-10 m-3 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
             <div className="card-body d-flex flex-column align-items-start" style={{ display: 'flex', flexDirection: 'column' }}>
               <FontAwesomeIcon icon={faLightbulb} size="2x" className="mb-3" style={{ color: 'orange' }} /> {/* Font Awesome Icon */}
               <h5 className="card-title">Proactive Problem Solving</h5>
@@ -88,7 +88,7 @@ const CoreStrength = () => {
           </div>
 
           {/* Card 6: Commitment to Deadlines */}
-          <div className="card border-0 col-md-3 col-10 m-2 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
+          <div className="card border-0 col-md-3 shadow-sm col-10 m-3 rounded-4" style={{ backgroundColor: 'lightyellow' }}>
             <div className="card-body d-flex flex-column align-items-start" style={{ display: 'flex', flexDirection: 'column' }}>
               <FontAwesomeIcon icon={faCalendarCheck} size="2x" className="mb-3" style={{ color: 'orange' }} /> {/* Font Awesome Icon */}
               <h5 className="card-title">Commitment to Deadlines</h5>
