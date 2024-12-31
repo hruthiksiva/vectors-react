@@ -7,6 +7,7 @@ import Portfolio from './Pages/Portfolio'
 import About from './Pages/About'
 import ContactUs from './Pages/ContactUs'
 import NotFound from './Pages/NotFound'
+import CaseStudyPage from './Pages/CaseStudyPage'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<ContactUs/>}/>
       <Route path='*' element={<NotFound/>}/>
+      <Route path='/casestudy' element={<CaseStudyPage/>}/>
     </Route>
   )
 )
