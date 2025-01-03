@@ -26,7 +26,7 @@ const CoreStrength = () => {
                 Driving innovation through continuous research and development to deliver cutting-edge solutions, ensuring our clients stay ahead in a rapidly evolving technological landscape.
               </p>
               <div className="mt-auto">
-                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us > </a>
+                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us  </a>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ const CoreStrength = () => {
                 Designing flexible solutions that grow seamlessly with your business, ensuring long-term scalability and adaptability to changing market demands.
               </p>
               <div className="mt-auto">
-                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us > </a>
+                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us  </a>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ const CoreStrength = () => {
                 Providing exceptional support to ensure client success and satisfaction, with a dedicated team available to address your needs promptly and effectively.
               </p>
               <div className="mt-auto">
-                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us > </a>
+                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us  </a>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ const CoreStrength = () => {
                 Implementing robust security measures and ensuring compliance with industry standards, safeguarding your data and maintaining trust and reliability.
               </p>
               <div className="mt-auto">
-                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us > </a>
+                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us  </a>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ const CoreStrength = () => {
                 Anticipating and resolving challenges swiftly to maintain project momentum and client satisfaction, ensuring smooth and efficient project delivery.
               </p>
               <div className="mt-auto">
-                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us > </a>
+                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us  </a>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ const CoreStrength = () => {
                 Consistently meeting project deadlines, ensuring timely delivery and client satisfaction, while maintaining the highest standards of quality.
               </p>
               <div className="mt-auto">
-                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us > </a>
+                <a href="/contact" className="" style={{ textDecoration: 'none', color: 'orange' }}>Start with us </a>
               </div>
             </div>
           </div>

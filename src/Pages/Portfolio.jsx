@@ -1,12 +1,17 @@
 import React from 'react';
 import caseimg from '../assets/img/case.jpg';
+import caseimg1 from '../../assets/img/portfolio-5.jpg'
+import caseimg2 from '../../assets/img/portfolio-2.png'
+import caseimg3 from '../../assets/img/portfolio-3.jpg'
+import caseimg4 from '../../assets/img/portfolio-4.png'
 import CaseStudy from '../Components/CaseStudy';
 
 const Portfolio = () => {
   const caseStudies = [
-    { img: caseimg, title: "Case Study 1", link: "#" },
-    { img: caseimg, title: "Case Study 2", link: "#" },
-    { img: caseimg, title: "Case Study 3", link: "#" }
+    { img: caseimg1, title: "Case Study 1", link: "#" },
+    { img: caseimg2, title: "Case Study 2", link: "#" },
+    { img: caseimg3, title: "Case Study 3", link: "#" },
+    { img: caseimg4, title: "Case Study 3", link: "#" }
   ];
 
   const renderCards = (category) => {

@@ -1,5 +1,6 @@
 import React from 'react'
 import caseimg from '../assets/img/case.jpg'
+
 const CaseStudy = () => {
   return (
     <div className='container-fluid'>
