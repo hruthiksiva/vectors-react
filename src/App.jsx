@@ -8,6 +8,12 @@ import About from './Pages/About'
 import ContactUs from './Pages/ContactUs'
 import NotFound from './Pages/NotFound'
 import CaseStudyPage from './Pages/CaseStudyPage'
+import Marketing from './Pages/Marketing'
+import WebD from './Pages/WebD'
+import Design from './Pages/Design'
+import ArtificialIntelligence from './Pages/AI'
+
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +25,10 @@ const router = createBrowserRouter(
       <Route path='/contact' element={<ContactUs/>}/>
       <Route path='*' element={<NotFound/>}/>
       <Route path='/casestudy' element={<CaseStudyPage/>}/>
+      <Route path='/marketing' element={<Marketing/>}/>
+      <Route path='/design' element={<Design/>}/>
+      <Route path='/web-devleopement' element={<WebD/>}/>
+      <Route path='/artificial-intelligence' element={<ArtificialIntelligence/>}/>
     </Route>
   )
 )

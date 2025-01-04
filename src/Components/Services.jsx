@@ -1,80 +1,54 @@
 import React from 'react'
+import Legacy from './Legacy'
+import legacyimg from '../assets/img/portfolio-14.png'
 
 const Services = () => {
   return (
-    <div className='container-fluid bg-light'>
-      {/* Design */}
-      <div className='row'>
-        <div className='col-12 col-md-4 px-5 mb-3 mb-md-0 purple d-flex align-items-center'>
-          <h1>Design</h1>
-        </div>
-        <div className='col-12 col-md-8'>
-          <div className='row py-5'>
-            <div className='col px-5 '>
-              <h3>UI/UX Design</h3>
-              <p>Intuitive, user-centric designs that leave a lasting impact.</p>
+    <>
+       <div className='container-fluid py-5 my-5 bg-dark text-white'>
+            <div className='row px-5'>
+              <h1 className='pb-5' style={{fontSize:'', fontFamily:'arial'}}><span style={{color:'#ffe6ca'}}>Services</span> We Provide</h1>
             </div>
-            <div className='col px-5'>
-              <h3>Logo Design</h3>
-              <p>Memorable brand identities that stand out in crowded markets.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+           <div className='row px-5 py-3'>
+             <div className='col-md-6 order-md-1 order-2 pe-5'>
+               {/* Wrapper div around the heading and paragraph */}
+               <div className="w-100">
+                 <h1 className='legacyheading'>Marketing</h1>
+                 <p>With a legacy of delivering exceptional digital experiences, our team of experts combines creativity, technology, and strategy to help premium businesses dominate the online space. Our commitment to quality, precision, and scalability sets us apart.</p>
+               </div>
+             </div>
+             <div className='col-md-6 text-md-end order-md-2 order-1 text-center mb-md-0 mb-3'>
+               <img src={legacyimg} alt='legacy image' className='rounded-3' style={{ width: '100%' }} />
+             </div>
+           </div>
+           
+           <div className='row px-5 py-3'>
+             <div className='col-md-6 order-md-1 order-2 pe-5'>
+               {/* Wrapper div around the heading and paragraph */}
+               <div className="w-100">
+                 <h1 className='legacyheading'>Design</h1>
+                 <p>With a legacy of delivering exceptional digital experiences, our team of experts combines creativity, technology, and strategy to help premium businesses dominate the online space. Our commitment to quality, precision, and scalability sets us apart.</p>
+               </div>
+             </div>
+             <div className='col-md-6 text-md-end order-md-2 order-1 text-center mb-md-0 mb-3'>
+               <img src={legacyimg} alt='legacy image' className='rounded-3' style={{ width: '100%' }} />
+             </div>
+           </div>
 
-      {/* Web Development */}
-      <div className='row '>
-        <div className='col-12 col-md-4'>
-          <div className='row'>
-            <div className='col-12 px-5 py-5 order-2'>
-              <p>Fast, responsive, and scalable websites tailored for your business goals.</p>
-            </div>
-          </div>
-        </div>
-        <div className='col-12 col-md-8 px-5 mb-3 mb-md-0 purple d-flex align-items-center order-1'>
-          <h1>Web Development</h1>
-        </div>
-      </div>
-
-      {/* Marketing */}
-      <div className='row'>
-        <div className='col-12 col-md-4 px-5 mb-3 mb-md-0 purple d-flex align-items-center'>
-          <h1>Marketing</h1>
-        </div>
-        <div className='col-12 col-md-8'>
-          <div className='row py-5'>
-            <div className='col px-5 '>
-              <h3>Digital Marketing</h3>
-              <p>Data-driven campaigns to enhance visibility and drive conversions</p>
-            </div>
-            <div className='col px-5'>
-              <h3>End-to-End Business Solutions</h3>
-              <p>Comprehensive strategies to streamline your digital transformation.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* AI */}
-       <div className='row '>
-        <div className='col-12 col-md-4'>
-          <div className='row'>
-            <div className='col px-5 py-5 order-2'>
-            <h3>ChatBot</h3>
-              <p>Build Powerful Chatbots to remove</p>
-            </div>
-            <div className='col px-5 py-5 order-2'>
-            <h3>Data Analytics Tools</h3>
-              <p>Build Powerful Chatbots to remove</p>
-            </div>
-            
-          </div>
-        </div>
-        <div className='col-12 col-md-8 px-5 mb-3 mb-md-0 purple d-flex align-items-center order-1'>
-          <h1>Arificial Intelligence</h1>
-        </div>
-      </div>
-    </div>
+           <div className='row px-5 py-3'>
+             <div className='col-md-6 order-md-1 order-2 pe-5'>
+               {/* Wrapper div around the heading and paragraph */}
+               <div className="w-100">
+                 <h1 className='legacyheading'>Web devleopement</h1>
+                 <p>With a legacy of delivering exceptional digital experiences, our team of experts combines creativity, technology, and strategy to help premium businesses dominate the online space. Our commitment to quality, precision, and scalability sets us apart.</p>
+               </div>
+             </div>
+             <div className='col-md-6 text-md-end order-md-2 order-1 text-center mb-md-0 mb-3'>
+               <img src={legacyimg} alt='legacy image' className='rounded-3' style={{ width: '100%' }} />
+             </div>
+           </div>
+         </div>
+    </>
   )
 }
 
