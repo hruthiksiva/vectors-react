@@ -27,7 +27,7 @@ const router = createBrowserRouter(
       <Route path='/casestudy' element={<CaseStudyPage/>}/>
       <Route path='/marketing' element={<Marketing/>}/>
       <Route path='/design' element={<Design/>}/>
-      <Route path='/web-devleopement' element={<WebD/>}/>
+      <Route path='/web-development' element={<WebD/>}/>
       <Route path='/artificial-intelligence' element={<ArtificialIntelligence/>}/>
     </Route>
   )

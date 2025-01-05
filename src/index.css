@@ -113,17 +113,148 @@
   width: 100%;
 }
 
-  /* Mobile screens */
-  @media (max-width: 767px) {
-    .hero-heading {
-      font-size: 30px; /* Smaller font size on mobile */
-    }
-    .heropara{
-      font-size: 11px
-    }
-    .legacyheading{
-      font-size:xx-large;
-    }
+
+
+/* NaVbarV3 */
+nav {
+  background-color: white;
+  height: 50px;
+  position: relative;
+  box-shadow: none; /* Optional, remove box-shadow if unnecessary */
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Aligns the first and last items to left and right */
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav .left {
+  display: flex;
+  align-items: center;
+  padding-right: 2%;
+}
+nav .right {
+  display: none;
+  align-items: center;
+  padding-right: 2%;
+}
+nav .ri8{
+  display: flex;
+  align-items: center;
+  padding-right: 2%;
+}
+nav .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Allows middle items to take up the available space */
+}
+
+nav a {
+  height: 100%;
+  padding: 0px 15px; /* Reduce the horizontal padding to reduce space */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav a:hover {
+  background-color: #ffe6ca;
+}
+
+/* Ensures first and last items have no margin */
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+
+.sidebar {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100vh;
+  z-index: 999;
+  display: none;  /* Initially hidden */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;  /* Reset any padding */
+  margin: 0;   /* Reset any margin */
+  transition: transform 0.3s ease-in-out;  /* Smooth transition */
+  transform: translateX(100%);  /* Start off-screen */
+}
+
+/* Sidebar becomes visible */
+.sidebar.visible {
+  display: flex;  /* Display it */
+  transform: translateX(0);  /* Slide in */
+}
+
+/* Sidebar links styling */
+.sidebar a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #f0f0f0;
+}
+
+nav .dropdown{
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+ background-color: rgb(255, 255, 255);
+ position: absolute;
+ width: max-content;
+ padding: 0;
+ margin: 0;
+}
+
+nav .dropdown li{
+  width: 100%;
+}
+
+nav .dropdown-container:hover .dropdown {
+  display: block; /* Show the dropdown when hovering the parent */
+}
+
+
+ /* Mobile screens */
+ @media (max-width: 800px) {
+  .hero-heading {
+    font-size: 30px; /* Smaller font size on mobile */
   }
-
-
+  .heropara{
+    font-size: 11px
+  }
+  .legacyheading{
+    font-size:xx-large;
+  }
+  .hideonmobile {
+    display: none;
+  }
+  nav .right{
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+  }
+}
