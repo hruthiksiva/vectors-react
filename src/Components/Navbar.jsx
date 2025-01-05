@@ -29,6 +29,7 @@ const Navbar = () => {
                 </svg>
               </a>
             </li>
+            <li className=""><a href='/'>Home</a></li>
             <li><a href='/'>About</a></li>
             <li>
               <a href="#" onClick={toggleServicesDropdown}>
@@ -50,8 +51,9 @@ const Navbar = () => {
 
           {/* Main navigation */}
           <ul >
-            <li className="left"><a href='/'>Home</a></li>
+            <li className="left"><a href='/'><img src={logoimg} className='h-75'/>Vectors</a></li>
             <li className="middle ">
+            <a className='hideonmobile' href='/'>Home</a>
               <a className='hideonmobile' href='/'>About</a>
               <li className="dropdown-container hideonmobile">
                 {/* Services dropdown in main navigation */}
