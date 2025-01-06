@@ -1,0 +1,11 @@
+.base{
+    background-color: #f0eff2;
+}
+
+.logobg{
+    background-color: #f0b04f;
+}
+
+.logobg:hover{
+    background-color: #ce9f59;
+}

@@ -1,0 +1,22 @@
+@media (min-width:800px) {
+    .heroHead{
+        font-size: 60px;
+    }
+}
+
+
+@media (max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .heroHead{
+        font-size: 40px;
+    }
+    .heroPara{
+        font-size: 13px;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+}
