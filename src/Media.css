@@ -2,6 +2,9 @@
     .heroHead{
         font-size: 60px;
     }
+    .hideOnDesktop{
+        display: none;
+    }
 }
 
 
