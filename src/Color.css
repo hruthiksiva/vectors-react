@@ -30,3 +30,16 @@
 }
 
 
+/* TEMP */
+.herobg{
+    background: #f2dfe5;
+    background: radial-gradient(at left top, #ffe3ec, #b6e5ff);
+}
+
+.card {
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any internal padding if it exists */
+  }
+  
+/* TEMP */
+

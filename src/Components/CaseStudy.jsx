@@ -1,27 +1,60 @@
 import React from 'react'
-import caseimg from '../assets/img/case.jpg'
+import caseimg from '../assets/img/portfolio-24.jpg'
 
 const CaseStudy = () => {
   return (
-    <div className='container-fluid'>
-      <div className='row px-3 py-5 my-5 d-flex justify-content-center'>
-        <div className='text-center col-12 mb-4'>
-          <h2>Case Study heading</h2>
+    <>
+   <div className="container-fluid base py-5 px-0 px-md-5">
+  <div className="row d-flex justify-content-center rounded-4 px-5 py-5 bg-black">
+    <div className="col-lg-4 col-12 py-5">
+      <div className="card" style={{ width: '100%' }}>
+        <img 
+          className="card-img-top" 
+          src={caseimg} 
+          alt="Card image cap" 
+          style={{ width: '100%', height: 'auto' }} // This ensures the image stretches across the full width
+        />
+        <div className="card-body">
+          <h5 className="card-title">Card title</h5>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" className="btn btn-primary">Go somewhere</a>
         </div>
-        <a href='/casestudy' className='col-md-3 rounded-3 shadow col-12 p-md-5 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-          <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-          <strong className=''>Case Study 1</strong>
-        </a>
-        <a href='/casestudy' className='col-md-3 rounded-3 shadow col-12 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-        <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-          <strong className=''>Case Study 2</strong>
-        </a>
-        <a href='/casestudy' className='col-md-3 rounded-3 shadow col-12 p-5 mx-3 grey-bg text-black' style={{textDecoration:'none'}}>
-        <img src={caseimg} className='img-fluid rounded-3 mb-3'/>
-          <strong className=''>Case Study 3</strong>
-        </a>
       </div>
     </div>
+    <div className="col-lg-4 col-12 py-5">
+      <div className="card" style={{ width: '100%' }}>
+        <img 
+          className="card-img-top" 
+          src={caseimg} 
+          alt="Card image cap" 
+          style={{ width: '100%', height: 'auto' }} 
+        />
+        <div className="card-body">
+          <h5 className="card-title">Card title</h5>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" className="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div className="col-lg-4 col-12 py-5">
+      <div className="card" style={{ width: '100%' }}>
+        <img 
+          className="card-img-top" 
+          src={caseimg} 
+          alt="Card image cap" 
+          style={{ width: '100%', height: 'auto' }} 
+        />
+        <div className="card-body">
+          <h5 className="card-title">Card title</h5>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" className="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </>
   )
 }
 
