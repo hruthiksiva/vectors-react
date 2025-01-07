@@ -2,18 +2,16 @@ import React, { useState } from 'react';
 import logoimg from '../assets/img/logorem.png';
 
 const Navbar = () => {
-  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
   const [isServicesDropdownVisible, setIsServicesDropdownVisible] = useState(false);
 
-  // Function to toggle sidebar visibility
-  const showSidebar = (e) => {
-    e.preventDefault(); // Prevents the page from reloading
-    setIsSidebarVisible((prevState) => !prevState);
+  // Function to show the services dropdown
+  const handleMouseEnter = () => {
+    setIsServicesDropdownVisible(true);
   };
 
-  // Function to toggle services dropdown visibility
-  const toggleServicesDropdown = () => {
-    setIsServicesDropdownVisible((prevState) => !prevState);
+  // Function to hide the services dropdown
+  const handleMouseLeave = () => {
+    setIsServicesDropdownVisible(false);
   };
 
   return (
@@ -21,18 +19,14 @@ const Navbar = () => {
       <body>
         <nav>
           {/* Sidebar menu */}
-          <ul className={`sidebar ${isSidebarVisible ? 'visible' : ''}`}>
-            <li onClick={showSidebar}>
-              <a href='/'>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black">
-                  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                </svg>
-              </a>
-            </li>
-            <li className=""><a href='/'>Home</a></li>
+          <ul className={`sidebar`}>
+            <li><a href='/'>Home</a></li>
             <li><a href='/'>About</a></li>
-            <li>
-              <a href="/services"  onClick={toggleServicesDropdown}>
+            <li
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <a href="/services">
                 Services
               </a>
               {/* Dropdown for Services */}
@@ -50,14 +44,18 @@ const Navbar = () => {
           </ul>
 
           {/* Main navigation */}
-          <ul >
-            <li className="left"><a href='/'><img src={logoimg} className='h-75'/>Vectors</a></li>
+          <ul>
+            <li className="left"><a href='/'><img src={logoimg} className='h-75' />Vectors</a></li>
             <li className="middle ">
-            <a className='hideonmobile' href='/'>Home</a>
-              <a className='hideonmobile' href='/'>About</a>
-              <li className="dropdown-container hideonmobile">
+              <a className='hideonmobile' href='/'>Home</a>
+              <a className='hideonmobile' href='/about'>About</a>
+              <li
+                className="dropdown-container hideonmobile"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 {/* Services dropdown in main navigation */}
-                <a href="/services" onClick={toggleServicesDropdown}>Services</a>
+                <a href="/services">Services</a>
                 {isServicesDropdownVisible && (
                   <ul className="dropdown">
                     <li><a href='/marketing'>Marketing</a></li>
@@ -67,13 +65,12 @@ const Navbar = () => {
                   </ul>
                 )}
               </li>
-              <a className='hideonmobile' href='/'>Portfolio</a>
-              {/* <a className='hideonmobile' href='/'>Contact</a> */}
+              <a className='hideonmobile' href='/portfolio'>Portfolio</a>
             </li>
-            <li onClick={showSidebar} className="ri8">
-              <a className='hideonmobile' href='/'>Contact</a>
+            <li className="ri8">
+              <a className='hideonmobile' href='/contact'>Contact</a>
             </li>
-            <li onClick={showSidebar} className="right">
+            <li className="right">
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black">
                 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
               </svg>
