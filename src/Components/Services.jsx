@@ -5,7 +5,7 @@ import legacyimg from '../assets/img/portfolio-14.png'
 const Services = () => {
   return (
     <>
-    <div className="container-fluid base py-5">
+    <div className="container-fluid py-5" style={{backgroundColor:'#f0eff2'}}>
       <div className="row px-3 d-flex justify-content-center">
         <div className="col-12 col-lg-3  rounded-4 border border-secondary my-5 mx-3 p-4  porange" style={{minHeight:'350px',width: '21rem'}}>
           <a href='/marketing' className='text-decoration-none text-black'>

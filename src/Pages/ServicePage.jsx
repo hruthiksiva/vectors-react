@@ -2,19 +2,23 @@ import React from 'react'
 import ServiceHero from '../Components/ServiceHero.jsx'
 import ServiceCards from './ServiceCards.jsx'
 import Testimonials from '../Components/Testimonials.jsx'
-import webdimg from '../assets/img/webd.jpg'
+import webdimg from '../assets/img/portfolio-14.png'
+import markimg from '../assets/img/portfolio-13.png'
+import desimg from '../assets/img/portfolio-10.png'
+
+import Services from '../Components/Services.jsx'
 const ServicePage = () => {
   return (
     <>
       <ServiceHero />
-      <ServiceCards/>
-
+      {/* <ServiceCards/> */}
+      <Services/>
       {/* Service Legacy */}
 
       {/* Marketing Services Section */}
-      <div className='grey-bg py-5 mb-0'>
-      <div className="container-fluid py-5 my-5">
-        <div className="row px-5">
+      <div className='base py-5 mb-0 base'>
+      <div className="container-fluid py-5 my-5 px-5">
+        <div className="row px-5 d-flex justify-content-center align-items-center herobg py-5 rounded-5">
           <div className="col-md-6 order-md-1 order-2 d-flex align-items-center pe-5">
             <div className="w-100">
               <h1 className="legacyheading">Marketing Services</h1>
@@ -27,15 +31,18 @@ const ServicePage = () => {
             </div>
           </div>
           <div className="col-md-6 text-md-end order-md-2 order-1 text-center mb-md-0 mb-3">
-            <img src={webdimg} alt="Marketing Image" className=" img-fluid rounded-3" style={{ }} />
+            <img src={markimg} alt="Marketing Image" className=" img-fluid rounded-3 mx-auto" style={{ }} />
           </div>
         </div>
       </div>
 
       {/* Web/App Development Services Section */}
-      <div className="container-fluid py-5 my-5">
-        <div className="row px-5">
-          <div className="col-md-6 order-md-2 order-1 d-flex align-items-center pe-5">
+      <div className="container-fluid py-5 my-5 px-5">
+        <div className="row px-5 d-flex justify-content-center align-items-center herobg py-5 rounded-5">
+        <div className="col-md-6 text-md-end text-center mb-md-0 mb-3 order-1 order-md-2">
+            <img src={webdimg} alt="Web/App Development Image" className="rounded-3 mx-auto" style={{ width: '100%' }} />
+          </div>
+          <div className="col-md-6 d-flex align-items-center pe-5 order-2 order-md-1">
             <div className="w-100">
               <h1 className="legacyheading">Web/App Development Services</h1>
               <p>We create digital experiences that are secure, fast, and fully aligned with your business goals.</p>
@@ -46,15 +53,12 @@ const ServicePage = () => {
               </ul>
             </div>
           </div>
-          <div className="col-md-6 text-md-end order-md-1 order-1 text-center mb-md-0 mb-3">
-            <img src={webdimg} alt="Web/App Development Image" className="rounded-3" style={{ width: '100%' }} />
-          </div>
         </div>
       </div>
 
       {/* Designing Services Section */}
-      <div className="container-fluid py-5 my-5">
-        <div className="row px-5">
+      <div className="container-fluid py-5 my-5 px-5">
+        <div className="row px-5 d-flex justify-content-center align-items-center herobg py-5 rounded-5">
           <div className="col-md-6 order-md-1 order-2 d-flex align-items-center pe-5">
             <div className="w-100">
               <h1 className="legacyheading">Designing Services</h1>
@@ -68,14 +72,19 @@ const ServicePage = () => {
             </div>
           </div>
           <div className="col-md-6 text-md-end order-md-2 order-1 text-center mb-md-0 mb-3">
-            <img src={webdimg} alt="Designing Image" className="rounded-3" style={{ width: '100%' }} />
+            <img src={desimg} alt="Designing Image" className="rounded-3 mx-auto" style={{ width: '100%' }} />
           </div>
         </div>
       </div>
       </div>
       
 
-{/* Repeat the structure above for additional content sections as needed */}
+      {/* <div className="container-fluid base">
+        <div className="row">
+          <div className="col"></div>
+          <div className="col"></div>
+        </div>
+      </div> */}
 
       <Testimonials/>
       
