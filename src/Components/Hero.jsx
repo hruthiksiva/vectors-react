@@ -4,7 +4,7 @@ import heroimg from '../../src/assets/img/hero.png';
 const Hero = () => {
   return (
     <>
-      <div className="container-fluid w-100 base" style={{ minHeight: '500px' }}>
+      <div className="container-fluid w-100 herobg" style={{ minHeight: '500px' }}>
         <div className="row w-100 d-flex justify-content-center align-items-center px-5 py-5 py-md-0">
           <div className="col-md-7 col-12">
             <h1 className="text-center heroHead text-md-start mb-5 mb-lg-0">
