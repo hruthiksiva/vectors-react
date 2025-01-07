@@ -40,6 +40,9 @@
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any internal padding if it exists */
   }
-  
+
+.shadowUp{
+    filter: drop-shadow(0 -25px 15px rgba(0, 0, 0, 0.3));
+}
 /* TEMP */
 

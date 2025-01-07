@@ -32,7 +32,7 @@ const Navbar = () => {
             <li className=""><a href='/'>Home</a></li>
             <li><a href='/'>About</a></li>
             <li>
-              <a href="#" onClick={toggleServicesDropdown}>
+              <a href="/services"  onClick={toggleServicesDropdown}>
                 Services
               </a>
               {/* Dropdown for Services */}
@@ -45,8 +45,8 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
-            <li><a href='/'>Portfolio</a></li>
-            <li><a href='/'>Contact</a></li>
+            <li><a href='/portfolio'>Portfolio</a></li>
+            <li><a href='/contact'>Contact</a></li>
           </ul>
 
           {/* Main navigation */}
@@ -57,7 +57,7 @@ const Navbar = () => {
               <a className='hideonmobile' href='/'>About</a>
               <li className="dropdown-container hideonmobile">
                 {/* Services dropdown in main navigation */}
-                <a href="#" onClick={toggleServicesDropdown}>Services</a>
+                <a href="/services" onClick={toggleServicesDropdown}>Services</a>
                 {isServicesDropdownVisible && (
                   <ul className="dropdown">
                     <li><a href='/marketing'>Marketing</a></li>
