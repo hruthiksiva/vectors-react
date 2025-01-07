@@ -9,8 +9,8 @@ const ServicePage = () => {
     <>
       {/* <ServiceHero /> */}
       {/* <ServiceCards/> */}
-      <div className='d-flex justify-content-center purple py-5'>
-      <div className='conatiner-fluid py-5'>
+      <div className='d-flex justify-content-center herobg py-5 position-relative' style={{minHeight:'800px'}}>
+      <div className='conatiner-fluid py-5 '>
           <div className='row ' >
               <div className='container-fluid rounded-4' style={{ minheight:'300px'}}>
                     <div className='row w-100 py-3 d-flex justify-content-center'>
@@ -22,7 +22,11 @@ const ServicePage = () => {
                     </div>
               </div>
           </div>
-      </div>
+          <div className="col-12 ">
+            <svg xmlns="http://www.w3.org/2000/svg" className="shadowUp position-absolute w-100 origin-center transform scale-110" fill="none" viewBox="0 0 2262 263" style={{left:'0', bottom:'-1'}}>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.3596C0 33.3596 870 157.138 1318 131.5C1766 105.862 2262 0 2262 0V263H0L0 33.3596Z" fill="#f0eff2"></path></svg>
+         </div>
+    </div>
     </div>
 
       {/* Service Legacy */}
