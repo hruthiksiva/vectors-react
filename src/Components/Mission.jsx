@@ -4,7 +4,7 @@ import vision from '../assets/img/vision.jpg';
 
 const MissionAndVision = () => {
   return (
-    <div className='container-fluid py-5 bg-light'>
+    <div className='container-fluid py-5 base'>
       <div className='row px-5 py-5 d-flex justify-content-center'>
         
         {/* Mission Card */}

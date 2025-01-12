@@ -44,5 +44,14 @@
 .shadowUp{
     filter: drop-shadow(0 -25px 15px rgba(0, 0, 0, 0.3));
 }
+
+    /* AboutPage */
+    .about-hero{
+        background: url(), linear-gradient(180deg, #212529 0%, #36354A 61.98%, #3B3C68 100%);
+        background-position: 50% 200px, top;
+        background-repeat: no-repeat;
+        background-size: cover, auto;
+    }
+    /* AboutPage */
 /* TEMP */
 
