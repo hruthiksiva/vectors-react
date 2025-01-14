@@ -24,7 +24,8 @@ const Action = () => {
     //   </div>
     // </div>
     <>
-       <div className="container-fluid bg-black d-flex justify-content-center align-items-center px-5" style={{minHeight:'600px'}}>
+      <div className='py-5  base'>      
+      <div className="container-fluid bg-black d-flex justify-content-center align-items-center px-5" style={{minHeight:'600px'}}>
         <div className="row d-flex justify-content-center py-5 my-5 px-5">
         <div className="col m-0">
           <div className="col p-4 darkgrey my-lg-4 mb-4 mb-lg-0 rounded-5">
@@ -49,6 +50,7 @@ const Action = () => {
         </div>
         
        </div>
+      </div>
     </>
     
   )

@@ -6,7 +6,7 @@ import Action from '../Components/Action'
 import Testimonials from '../Components/Testimonials'
 import Casestudy from '../Components/CaseStudy'
 import ContactCard from '../Components/ContactCard'
-
+import HomeSvg from '../Components/HomeSvg'
 
 const Homepage = () => {
   return (
@@ -15,6 +15,7 @@ const Homepage = () => {
         <Legacy/>
         <Services/>
         <Action/>
+        <HomeSvg/>
         <Testimonials/>
         <Casestudy/>
         <ContactCard/>

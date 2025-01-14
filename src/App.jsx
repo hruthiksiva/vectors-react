@@ -7,12 +7,13 @@ import Portfolio from './Pages/Portfolio'
 import About from './Pages/About'
 import ContactUs from './Pages/ContactUs'
 import NotFound from './Pages/NotFound'
-import CaseStudyPage from './Pages/CaseStudyPage'
+import CaseStudyPage1 from './Pages/CaseStudyPage1'
+import CaseStudyPage2 from './Pages/CaseStudyPage2'
 import Marketing from './Pages/Marketing'
 import WebD from './Pages/WebD'
 import Design from './Pages/Design'
 import ArtificialIntelligence from './Pages/AI'
-
+import CaseStudyPage3 from './Pages/CaseStudyPage3'
 
 
 const router = createBrowserRouter(
@@ -24,7 +25,9 @@ const router = createBrowserRouter(
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<ContactUs/>}/>
       <Route path='*' element={<NotFound/>}/>
-      <Route path='/casestudy' element={<CaseStudyPage/>}/>
+      <Route path='/casestudy1' element={<CaseStudyPage1 />}/>
+      <Route path='/casestudy2' element={<CaseStudyPage2 />}/>
+      <Route path='/casestudy3' element={<CaseStudyPage3 />}/>
       <Route path='/marketing' element={<Marketing/>}/>
       <Route path='/design' element={<Design/>}/>
       <Route path='/web-development' element={<WebD/>}/>
