@@ -1,83 +1,9 @@
-/* Sidebar styles */
-.sidebar {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar li {
-    margin: 10px 0;
-  }
-  
-  .dropdown {
-    display: none; /* Hide dropdown by default */
-    position: absolute;
-    background-color: white;
-    list-style-type: none;
-    padding: 10px;
-    border: 1px solid #ddd;
-    z-index: 10;
-  }
-  
-  .dropdown-container:hover .dropdown {
-    display: block; /* Show dropdown on hover */
-  }
-  
-  /* Main navigation styles */
-  ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .left img {
-    height: 75px;
-  }
-  
-  /* Hide on mobile */
-  .hideonmobile {
-    display: inline-block;
-  }
-  
-  @media (max-width: 768px) {
-    .hideonmobile {
-      display: none; /* Hide desktop navigation items on mobile */
-    }
-  
-    /* Mobile menu styles */
-    .mobile-menu {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      background-color: #fff;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 999;
-    }
-  
-    .mobile-menu li {
-      margin: 10px 0;
-      padding: 10px;
-      text-align: center;
-    }
-  
-    .mobile-menu li a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-    }
-  }
-  
-  /* Dropdown menu for Services */
-  .dropdown li {
-    padding: 10px;
-    list-style: none;
-  }
-  
-  .dropdown li a {
-    text-decoration: none;
-    color: black;
-  }
-  
+/* Add this CSS in your styles (e.g., in your App.css or a specific Navbar.css file) */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  display: none;
+}
+
