@@ -5,7 +5,7 @@ import legacyimg from '../assets/img/portfolio-14.png'
 const Services = () => {
   return (
     <>
-    <div className="container-fluid py-5" style={{backgroundColor:'#f0eff2'}}>
+    <div className="container-fluid hideOnDesktop py-5" style={{backgroundColor:'#f0eff2'}}>
       <div className="row px-3 d-flex justify-content-center">
         <div className="col-12 col-lg-3  rounded-4 border border-secondary my-5 mx-3 p-4  porange" style={{minHeight:'350px',width: '21rem'}}>
           <a href='/marketing' className='text-decoration-none text-black'>
@@ -37,6 +37,38 @@ const Services = () => {
       </div>
     </div>
     
+{/* hideOnMobile */}
+    <div className="container-fluid hideOnMobile py-5" style={{backgroundColor:'#f0eff2'}}>
+      <div className="row px-3 d-flex justify-content-center">
+        <div className="col-12 col-lg-3  rounded-4 border border-secondary my-5 mx-3 p-4  porange" style={{minHeight:'350px',width: '21rem'}}>
+          <a href='/marketing' className='text-decoration-none text-black'>
+          <h1>Marketing</h1>
+          <p>With a legacy of delivering exceptional digital experiences, our team of experts combines creativity, technology, and strategy to help premium businesses dominate the online space. Our commitment to quality, precision, and scalability sets us apart.</p>
+          </a>
+        </div>
+
+        <div className="col-12 col-lg-3  rounded-4 border border-secondary my-5 mx-3 p-4  pgreen" style={{minHeight:'350px',width: '21rem'}}>
+        <a href='/design' className='text-decoration-none text-black'>
+        <h1>Design</h1>
+        <p>With a legacy of delivering exceptional digital experiences, our team of experts combines creativity, technology, and strategy to help premium businesses dominate the online space. Our commitment to quality, precision, and scalability sets us apart.</p>
+          </a>
+        </div>
+
+        <div className="col-12 col-lg-3  rounded-4 border border-secondary my-5 mx-3 p-4  pblue" style={{minHeight:'350px',width: '21rem'}}>
+        <a href='/web-development' className='text-decoration-none text-black'>
+          <h1>Web Development</h1>
+          <p>With a legacy of delivering exceptional digital experiences, our team of experts combines creativity, technology, and strategy to help premium businesses dominate the online space. Our commitment to quality, precision, and scalability sets us apart.</p>
+          </a>
+        </div>
+
+        <div className="col-12 col-lg-3  rounded-4 border border-secondary my-5 mx-3 p-4  plightgreen" style={{minHeight:'350px',width: '21rem'}}>
+        <a href='/artificial-intelligence' className='text-decoration-none text-black'>
+          <h1>AI assitance</h1>
+          <p>With a legacy of delivering exceptional digital experiences, our team of experts combines creativity, technology, and strategy to help premium businesses dominate the online space. Our commitment to quality, precision, and scalability sets us apart.</p>
+          </a>
+        </div>
+      </div>
+    </div>
 
 
     {/* VERSION 1 (bg-dark) */}
