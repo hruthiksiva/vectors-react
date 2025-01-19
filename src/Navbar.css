@@ -7,3 +7,25 @@
   display: none;
 }
 
+/* Custom CSS for the slide-in from right */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    padding: 15px;
+    padding-left: 20px;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+
+
+}
